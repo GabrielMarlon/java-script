@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+
+<body>
+    <script>
+        // Condições
+        var numero = 18;
+        var nome1 = 'Gabriel';
+
+        // Comparação de nomes
+        if (nome1 == 'Cassia'){
+            console.log('Falso');
+        } else if (nome1 == 'Gabriel'){
+            console.log('Entramos no else if! o nome Gabriel e verdadeiro.');
+        } else {
+            console.log('Entrou no else!');
+        }
+
+        // Comparação de variáveis
+        /* >= | > | <= | < | == | != | && | ||*/
+        if (numero <= 18) {
+            console.log('o número é menor ou igual a 18!');
+        } else if (numero < 19){
+            console.log('O numero não é menor que 18!');
+        }
+
+        if(nome1 != "Cassia"){
+            console.log('Sim nome é diferente de Cassia');
+        }
+
+        if(numero == 18 && nome1 == "Gabriel"){
+            console.log('Sim, número e igual a 18 e nome é igual a Gabriel');
+        }
+    </script>
+</body>
+
+</html>
