@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="/modulo-02/favicon.png" />
+    <title>ForEach</title>
+</head>
+
+<body>
+    <script>
+        var nome = ["Gabriel","Marlon", "Ferreira", "Cassia"];
+        for(var i = 0; i < nome.length; i++){
+            console.log(nome[i]);
+        }
+        console.log('--------')
+
+        nome.forEach(function(value, index ){
+            console.log(value, index);
+        })
+    </script>
+</body>
+
+</html>
