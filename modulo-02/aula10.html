@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="/modulo-02/favicon.png" />
+    <title>Exercício II</title>
+</head>
+
+<body>
+    <script>
+        var anoNascimento = prompt("Qual seu ano de nascimento?");
+        // Validação do ano de nascimento
+        while( anoNascimento >= 2024 || anoNascimento <= 1900 ){
+            alert('Digite o ano correto de seu nascimento!');
+            anoNascimento = prompt("Qual seu ano de nascimento?");
+        } 
+
+        var anoAtual = prompt("Qual ano atual?");
+        // Validação de ano atual
+        while(anoAtual < 2024 || anoAtual > 2024){
+            alert('Digite o ano atual corretamente');
+            anoAtual = prompt("Qual ano atual?")
+        }
+
+        var idade = anoAtual - anoNascimento;
+        alert("sua idade é: " + idade);
+    </script>
+</body>
+
+</html>
