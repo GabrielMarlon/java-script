@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="/modulo-02/favicon.png" />
+    <title>Funções parte I</title>
+</head>
+
+<body>
+    <script>
+        function testes1(){
+            // Executa quando chama a função
+            console.log('chamando a função testes');
+        }
+
+        function testes2(nome, idade){
+            console.log("O nome passado é: " + nome);
+            console.log("A idade é: " + idade);
+            console.log("--------------------------")
+        }
+
+        testes1();
+        testes2("Gabriel", 18);
+        testes2("Marlon", 22);
+
+        //função para retorno de alguma coisa
+        function pegarNome1(){
+            return "Gabriel";
+        }
+
+        var nome1 = pegarNome1();
+        console.log(nome1);
+
+        function pegarNome2(parametro){
+            if(parametro == 1){
+                return "Gabriel";
+            } else {
+                return "Outro nome";
+            }
+        }
+
+        var nome2 = pegarNome2(1);
+        console.log(nome2)
+    </script>
+</body>
+
+</html>
